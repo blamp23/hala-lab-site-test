@@ -116,4 +116,22 @@
     });
   });
 
+  /* ---- SPONSOR CAROUSEL
+     Cycles through .sponsor-slide images every 3 seconds.
+     To add a new sponsor: add an <img class="sponsor-slide"> in index.html
+     and a matching <span class="sponsor-dot"> in .sponsor-dots. ---- */
+  const slides = Array.from(document.querySelectorAll('.sponsor-slide'));
+  const dots   = Array.from(document.querySelectorAll('.sponsor-dot'));
+  let current  = 0;
+
+  if (slides.length > 1) {
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }, 3000);
+  }
+
 })();

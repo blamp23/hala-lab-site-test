@@ -30,6 +30,7 @@
       <li><a href="#publications">Publications</a></li>
       <li><a href="#facilities">Facilities</a></li>
       <li><a href="#join">Join Us</a></li>
+      <li><a href="#sponsors">Funding</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMobile">
@@ -45,6 +46,7 @@
   <a href="#publications" class="mob-link">Publications</a>
   <a href="#facilities" class="mob-link">Facilities</a>
   <a href="#join" class="mob-link">Join Us</a>
+  <a href="#sponsors" class="mob-link">Funding</a>
   <a href="#contact" class="mob-link">Contact</a>
 </div>
 
@@ -667,7 +669,48 @@
 </section>
 
 <!-- =============================================
-     SECTION 8 — CONTACT / FOOTER
+     SECTION 8 — SPONSORS
+     To add/remove logos: add or remove an <img> inside .sponsors-stage
+     and a matching <span class="sponsor-dot"> inside .sponsor-dots.
+     Keep the first <img> as class="sponsor-slide active".
+============================================= -->
+<section id="sponsors" aria-labelledby="sponsors-h2">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <p class="section-label" style="justify-content:center;display:flex;">// supported by</p>
+      <h2 class="section-title" id="sponsors-h2" style="color:var(--text-dark);">Funding &amp; Support</h2>
+    </div>
+    <div class="sponsors-carousel fade-up">
+      <div class="sponsors-stage" role="img" aria-label="Rotating funding agency logos">
+        <img src="Images/Sponsers/TGLO.png"                           alt="Texas General Land Office"          class="sponsor-slide active" />
+        <img src="Images/Sponsers/NSF.png"                            alt="National Science Foundation"        class="sponsor-slide" />
+        <img src="Images/Sponsers/USGS.png"                           alt="U.S. Geological Survey"             class="sponsor-slide" />
+        <img src="Images/Sponsers/TPWD.png"                           alt="Texas Parks and Wildlife Department" class="sponsor-slide" />
+        <img src="Images/Sponsers/MAF.png"                            alt="MAF"                                class="sponsor-slide" />
+        <img src="Images/Sponsers/EAG.png"                            alt="EAG"                                class="sponsor-slide" />
+        <img src="Images/Sponsers/USCRP.png"                          alt="USCRP"                              class="sponsor-slide" />
+        <img src="Images/Sponsers/oceanus.jpg"                        alt="Oceanus"                            class="sponsor-slide" />
+        <img src="Images/Sponsers/GBEP.png"                           alt="Galveston Bay Estuary Program"      class="sponsor-slide" />
+        <img src="Images/Sponsers/Matagorda-Bay-Mitigation-Logo-color.png" alt="Matagorda Bay Mitigation Trust" class="sponsor-slide" />
+      </div>
+      <div class="sponsor-dots" aria-hidden="true">
+        <span class="sponsor-dot active"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+        <span class="sponsor-dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 9 — CONTACT / FOOTER
 ============================================= -->
 <footer id="contact">
   <div class="container">
