@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systems Toxicology Laboratory · TAMUG</title>
+  <meta name="description" content="The Systems Toxicology Laboratory at Texas A&M University at Galveston, directed by Dr. David Hala. We study how environmental contaminants disrupt molecular networks in Gulf Coast species." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- =============================================
+     NAVIGATION
+============================================= -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Systems Toxicology Laboratory — home">
+      <img src="Images/marine_tox_lab_logo.png" alt="Systems Toxicology Laboratory logo" />
+      <span class="nav-logo-text">STL · TAMUG</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#people">People</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#join">Join Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div id="navMobile" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="#research" class="mob-link">Research</a>
+  <a href="#people" class="mob-link">People</a>
+  <a href="#publications" class="mob-link">Publications</a>
+  <a href="#facilities" class="mob-link">Facilities</a>
+  <a href="#join" class="mob-link">Join Us</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<main id="main">
+
+<!-- =============================================
+     SECTION 1 — HERO
+============================================= -->
+<section id="hero" aria-labelledby="hero-h1">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Texas A&amp;M University at Galveston · Systems Toxicology</p>
+    <h1 class="hero-headline" id="hero-h1">
+      Decoding How Pollution<br>Rewires Life
+    </h1>
+    <p class="hero-sub">
+      We study how environmental contaminants disrupt the molecular networks
+      that govern survival, growth, and reproduction in Gulf Coast species —
+      and build computational models to predict those disruptions.
+    </p>
+    <div class="hero-ctas">
+      <a href="#research" class="btn-primary">Explore Our Research</a>
+      <a href="#people"   class="btn-secondary">Meet the Team</a>
+    </div>
+    <div class="hero-stats" aria-label="Lab at a glance">
+      <div class="stat-item">
+        <span class="stat-number" data-target="7">0</span>
+        <div class="stat-label">Active Projects</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="20" data-suffix="+">0</span>
+        <div class="stat-label">Publications</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="3">0</span>
+        <div class="stat-label">Research Areas</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave divider -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 82" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,42 C240,82 480,2 720,42 C960,82 1200,8 1440,42 L1440,82 L0,82 Z" fill="#f8f5f0"/>
+    </svg>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 2 — RESEARCH
+============================================= -->
+<section id="research" aria-labelledby="research-h2">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">// what we study</p>
+      <h2 class="section-title" id="research-h2">Research</h2>
+      <p class="research-intro">
+        Our lab asks how environmental pollutants disrupt the molecular networks
+        governing survival, reproduction, and development in Gulf Coast species —
+        and uses computational modeling to predict those disruptions before they
+        appear at the population level.
+      </p>
+    </div>
+
+    <!-- Card 1 — Marine Toxicology -->
+    <article class="research-card fade-up" aria-labelledby="card1-title">
+      <div class="card-text">
+        <span class="card-tag">// 01 · Field &amp; Analytical</span>
+        <h3 class="card-title" id="card1-title">Marine Toxicology</h3>
+        <p class="card-body">
+          We measure legacy and emerging pollutants — PFAS, PAHs, PCBs, and
+          microplastics — in surface waters and biota across northwestern Gulf of
+          Mexico ecosystems including Matagorda Bay and Galveston Bay. We quantify
+          metabolic and endocrine biomarkers of exposure to connect pollutant
+          presence to physiological harm.
+        </p>
+        <div class="species-tags" aria-label="Study species">
+          <span class="species-tag">Southern Flounder</span>
+          <span class="species-tag">Sheepshead Minnow</span>
+          <span class="species-tag">Bottlenose Dolphin</span>
+          <span class="species-tag">American Alligator</span>
+        </div>
+      </div>
+      <div class="card-illustration" aria-hidden="true">
+        <!-- SVG: sine waves + molecule nodes -->
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:280px">
+          <path d="M10,100 C55,58 95,142 135,100 C175,58 215,142 255,100 C272,82 286,110 296,100"
+                fill="none" stroke="#2e86ab" stroke-width="2.5" opacity="0.85"/>
+          <path d="M10,128 C55,86 95,170 135,128 C175,86 215,170 255,128 C272,110 286,138 296,128"
+                fill="none" stroke="#a8dadc" stroke-width="2" opacity="0.5"/>
+          <path d="M10,72 C55,30 95,114 135,72 C175,30 215,114 255,72 C272,54 286,82 296,72"
+                fill="none" stroke="#2e86ab" stroke-width="1.5" opacity="0.38"/>
+          <!-- nodes -->
+          <circle cx="52" cy="82" r="7" fill="#2e86ab" opacity="0.9"/>
+          <circle cx="52" cy="82" r="12" fill="none" stroke="#2e86ab" stroke-width="1" opacity="0.35"/>
+          <circle cx="135" cy="100" r="5.5" fill="#a8dadc" opacity="0.95"/>
+          <circle cx="135" cy="100" r="10" fill="none" stroke="#a8dadc" stroke-width="1" opacity="0.38"/>
+          <circle cx="213" cy="88" r="8" fill="#2e86ab" opacity="0.8"/>
+          <circle cx="213" cy="88" r="13" fill="none" stroke="#2e86ab" stroke-width="1" opacity="0.28"/>
+          <circle cx="88" cy="138" r="4.5" fill="#a8dadc" opacity="0.7"/>
+          <circle cx="172" cy="62" r="5"   fill="#2e86ab" opacity="0.6"/>
+          <circle cx="258" cy="122" r="4"  fill="#a8dadc" opacity="0.8"/>
+          <!-- bonds -->
+          <line x1="52"  y1="82"  x2="88"  y2="68"  stroke="#2e86ab" stroke-width="1" opacity="0.28"/>
+          <line x1="135" y1="100" x2="172" y2="62"  stroke="#a8dadc" stroke-width="1" opacity="0.28"/>
+          <line x1="213" y1="88"  x2="258" y2="122" stroke="#2e86ab" stroke-width="1" opacity="0.28"/>
+        </svg>
+      </div>
+    </article>
+
+    <!-- Card 2 — Endocrinology (reversed) -->
+    <article class="research-card reverse fade-up" aria-labelledby="card2-title">
+      <div class="card-text">
+        <span class="card-tag">// 02 · Physiology</span>
+        <h3 class="card-title" id="card2-title">Vertebrate Endocrinology</h3>
+        <p class="card-body">
+          We study how environmental stressors and chemical contaminants disrupt
+          endocrine systems across vertebrate taxa — from early-stage zebrafish
+          to adult American alligators. This comparative approach reveals shared
+          mechanisms of hormonal disruption across wildly different animals.
+        </p>
+        <div class="species-tags" aria-label="Study species">
+          <span class="species-tag">Zebrafish</span>
+          <span class="species-tag">American Alligator</span>
+          <span class="species-tag">Southern Flounder</span>
+        </div>
+      </div>
+      <div class="card-illustration" aria-hidden="true">
+        <!-- SVG: fish silhouette + network -->
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:280px">
+          <ellipse cx="142" cy="100" rx="88" ry="42" fill="none" stroke="#2e86ab" stroke-width="2" opacity="0.32"/>
+          <path d="M230,100 L268,73 L268,127 Z" fill="none" stroke="#2e86ab" stroke-width="2" opacity="0.32"/>
+          <circle cx="76" cy="94" r="5" fill="#2e86ab" opacity="0.45"/>
+          <!-- network nodes -->
+          <circle cx="118" cy="88" r="9" fill="none" stroke="#a8dadc" stroke-width="2.5"/>
+          <circle cx="118" cy="88" r="3.5" fill="#a8dadc"/>
+          <circle cx="162" cy="102" r="11" fill="none" stroke="#2e86ab" stroke-width="2.5"/>
+          <circle cx="162" cy="102" r="4.5" fill="#2e86ab"/>
+          <circle cx="138" cy="67"  r="8" fill="none" stroke="#a8dadc" stroke-width="2"/>
+          <circle cx="138" cy="67"  r="3"  fill="#a8dadc"/>
+          <circle cx="98"  cy="120" r="7" fill="none" stroke="#2e86ab" stroke-width="2"/>
+          <circle cx="98"  cy="120" r="2.5" fill="#2e86ab"/>
+          <circle cx="188" cy="78"  r="6" fill="none" stroke="#a8dadc" stroke-width="2"/>
+          <circle cx="188" cy="78"  r="2.5" fill="#a8dadc"/>
+          <!-- edges -->
+          <line x1="118" y1="88"  x2="162" y2="102" stroke="#a8dadc" stroke-width="1.5" opacity="0.6"/>
+          <line x1="118" y1="88"  x2="138" y2="67"  stroke="#a8dadc" stroke-width="1.5" opacity="0.6"/>
+          <line x1="162" y1="102" x2="138" y2="67"  stroke="#2e86ab" stroke-width="1.2" opacity="0.5"/>
+          <line x1="98"  y1="120" x2="118" y2="88"  stroke="#2e86ab" stroke-width="1.2" opacity="0.5"/>
+          <line x1="162" y1="102" x2="188" y2="78"  stroke="#a8dadc" stroke-width="1.2" opacity="0.45"/>
+          <line x1="138" y1="67"  x2="188" y2="78"  stroke="#2e86ab" stroke-width="1"   opacity="0.38"/>
+        </svg>
+      </div>
+    </article>
+
+    <!-- Card 3 — Systems Biology -->
+    <article class="research-card fade-up" aria-labelledby="card3-title">
+      <div class="card-text">
+        <span class="card-tag">// 03 · Computational</span>
+        <h3 class="card-title" id="card3-title">Systems Biology &amp; Metabolic Modeling</h3>
+        <p class="card-body">
+          We apply constraint-based metabolic network modeling, flux balance
+          analysis, and multi-omic data integration to predict how pollution
+          rewires cellular metabolism. We build context-specific metabolic models
+          from transcriptomic and metabolomic datasets to trace effects from
+          molecular initiating events to physiological outcomes.
+        </p>
+        <div class="species-tags" aria-label="Tools and methods">
+          <span class="species-tag">FBA</span>
+          <span class="species-tag">FVA</span>
+          <span class="species-tag">GIMME</span>
+          <span class="species-tag">ZebrafishGEM</span>
+          <span class="species-tag">R</span>
+          <span class="species-tag">MATLAB</span>
+          <span class="species-tag">COBRA Toolbox</span>
+        </div>
+      </div>
+      <div class="card-illustration" aria-hidden="true">
+        <!-- SVG: directed metabolic network -->
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:280px">
+          <defs>
+            <marker id="arr1" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+              <polygon points="0 0,7 2.5,0 5" fill="#2e86ab" opacity="0.75"/>
+            </marker>
+            <marker id="arr2" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+              <polygon points="0 0,7 2.5,0 5" fill="#a8dadc" opacity="0.65"/>
+            </marker>
+          </defs>
+          <!-- node definitions: cx cy r stroke-color -->
+          <circle cx="58"  cy="58"  r="12" fill="#0a2342" stroke="#2e86ab"  stroke-width="2.2"/>
+          <circle cx="58"  cy="58"  r="4"  fill="#2e86ab"/>
+          <circle cx="152" cy="38"  r="10" fill="#0a2342" stroke="#a8dadc"  stroke-width="2.2"/>
+          <circle cx="152" cy="38"  r="3.5" fill="#a8dadc"/>
+          <circle cx="242" cy="62"  r="11" fill="#0a2342" stroke="#2e86ab"  stroke-width="2.2"/>
+          <circle cx="242" cy="62"  r="4"  fill="#2e86ab"/>
+          <circle cx="78"  cy="132" r="9"  fill="#0a2342" stroke="#a8dadc"  stroke-width="2"/>
+          <circle cx="78"  cy="132" r="3"  fill="#a8dadc"/>
+          <circle cx="170" cy="112" r="13" fill="#0a2342" stroke="#2e86ab"  stroke-width="2.5"/>
+          <circle cx="170" cy="112" r="5"  fill="#2e86ab"/>
+          <circle cx="258" cy="140" r="8"  fill="#0a2342" stroke="#a8dadc"  stroke-width="2"/>
+          <circle cx="258" cy="140" r="2.5" fill="#a8dadc"/>
+          <circle cx="118" cy="170" r="10" fill="#0a2342" stroke="#2e86ab"  stroke-width="2"/>
+          <circle cx="118" cy="170" r="3.5" fill="#2e86ab"/>
+          <circle cx="210" cy="172" r="9"  fill="#0a2342" stroke="#a8dadc"  stroke-width="2"/>
+          <circle cx="210" cy="172" r="3"  fill="#a8dadc"/>
+          <!-- edges -->
+          <path d="M70,58 Q110,38 142,40"         fill="none" stroke="#2e86ab" stroke-width="1.5" opacity="0.62" marker-end="url(#arr1)"/>
+          <path d="M162,42 Q202,40 232,58"        fill="none" stroke="#a8dadc" stroke-width="1.5" opacity="0.62" marker-end="url(#arr2)"/>
+          <path d="M58,70 Q62,100 72,124"         fill="none" stroke="#2e86ab" stroke-width="1.5" opacity="0.58" marker-end="url(#arr1)"/>
+          <path d="M87,132 Q124,118 158,116"      fill="none" stroke="#a8dadc" stroke-width="1.5" opacity="0.62" marker-end="url(#arr2)"/>
+          <path d="M242,74 Q248,106 254,132"      fill="none" stroke="#2e86ab" stroke-width="1.5" opacity="0.5"  marker-end="url(#arr1)"/>
+          <path d="M170,125 Q155,148 126,162"     fill="none" stroke="#a8dadc" stroke-width="1.5" opacity="0.62" marker-end="url(#arr2)"/>
+          <path d="M170,125 Q190,148 204,164"     fill="none" stroke="#2e86ab" stroke-width="1.5" opacity="0.62" marker-end="url(#arr1)"/>
+          <path d="M152,48  Q118,80 86,124"       fill="none" stroke="#a8dadc" stroke-width="1"   opacity="0.32" stroke-dasharray="4,3"/>
+        </svg>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 3 — STATS
+============================================= -->
+<section id="stats" aria-label="Lab statistics and overview">
+  <div class="container">
+    <div class="stats-grid fade-up" role="list">
+      <div class="stats-item" role="listitem">
+        <span class="stats-number" data-target="3">0</span>
+        <div class="stats-label">Research Focus Areas</div>
+      </div>
+      <div class="stats-item" role="listitem">
+        <span class="stats-number" data-target="7">0</span>
+        <div class="stats-label">Current Lab Members</div>
+      </div>
+      <div class="stats-item" role="listitem">
+        <span class="stats-number" data-target="10" data-suffix="+">0</span>
+        <div class="stats-label">Years of Gulf Coast Research</div>
+      </div>
+      <div class="stats-item" role="listitem">
+        <span class="stats-number" data-target="20" data-suffix="+">0</span>
+        <div class="stats-label">Peer-Reviewed Publications</div>
+      </div>
+    </div>
+    <div class="stats-quote fade-up">
+      <p>"From molecular networks to ecosystem outcomes —<br>we connect the dots."</p>
+      <cite>— Systems Toxicology Laboratory, TAMUG</cite>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 4 — PEOPLE
+============================================= -->
+<section id="people" aria-labelledby="people-h2">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">// who we are</p>
+      <h2 class="section-title" id="people-h2">The Lab</h2>
+    </div>
+
+    <!-- PI -->
+    <div class="pi-card fade-up">
+      <div class="avatar-lg" aria-label="Avatar placeholder for Dr. David Hala">DH</div>
+      <div class="pi-info">
+        <h3 class="pi-name">Dr. David Hala</h3>
+        <p class="pi-role">Associate Professor of Marine Biology</p>
+        <p class="pi-role">Texas A&amp;M University at Galveston</p>
+        <p class="pi-contact">halad@tamug.edu &nbsp;·&nbsp; 409-740-4535</p>
+        <div class="pi-links">
+          <a href="#" class="btn-small">TAMUG Faculty Page</a>
+          <a href="#" class="btn-small">Google Scholar</a>
+        </div>
+        <div class="pi-bio">Biography forthcoming.</div>
+      </div>
+    </div>
+
+    <!-- Current Members -->
+    <h3 class="members-heading fade-up">Current Members</h3>
+    <div class="members-grid">
+
+      <!-- Olivia Thibault -->
+      <div class="member-card fade-up">
+        <div class="avatar-sm" style="background:linear-gradient(135deg,#2e86ab,#0a2342)" aria-label="Photo coming soon for Olivia Thibault">
+          OT
+          <span class="cam-badge" aria-hidden="true">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+          </span>
+          <span class="photo-tip">Photo coming soon</span>
+        </div>
+        <div class="role-badge">PhD Candidate</div>
+        <div class="member-name">Olivia Thibault</div>
+        <p class="member-research">Reproductive endocrinology and metabolic physiology of southern flounder. Co-mentored with Dr. Lene Petersen.</p>
+        <a href="mailto:livi73@tamu.edu" class="member-email">livi73@tamu.edu</a>
+      </div>
+
+      <!-- Asif Mortuza -->
+      <div class="member-card fade-up">
+        <div class="avatar-sm" style="background:linear-gradient(135deg,#500000,#112d4e)" aria-label="Photo coming soon for Asif Mortuza">
+          AM
+          <span class="cam-badge" aria-hidden="true">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+          </span>
+          <span class="photo-tip">Photo coming soon</span>
+        </div>
+        <div class="role-badge">PhD Candidate</div>
+        <div class="member-name">Asif Mortuza</div>
+        <p class="member-research">Microplastics and pollutants (PAHs/PCBs) in surface waters and biota of Matagorda Bay; toxicological effects on early life-stage fish.</p>
+        <a href="mailto:morta02@tamu.edu" class="member-email">morta02@tamu.edu</a>
+      </div>
+
+      <!-- Daniel Kemp -->
+      <div class="member-card fade-up">
+        <div class="avatar-sm" style="background:linear-gradient(135deg,#2e86ab,#500000)" aria-label="Photo coming soon for Daniel Kemp">
+          DK
+          <span class="cam-badge" aria-hidden="true">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+          </span>
+          <span class="photo-tip">Photo coming soon</span>
+        </div>
+        <div class="role-badge">PhD Student</div>
+        <div class="member-name">Daniel Kemp</div>
+        <p class="member-research">Developmental bioenergetics and physiology of larval southern flounder. Co-mentored with Dr. Lene Petersen.</p>
+        <a href="mailto:danielkemp@tamu.edu" class="member-email">danielkemp@tamu.edu</a>
+      </div>
+
+      <!-- Carle Dugan -->
+      <div class="member-card fade-up">
+        <div class="avatar-sm" style="background:linear-gradient(135deg,#0a2342,#2e86ab)" aria-label="Photo coming soon for Carle Dugan">
+          CD
+          <span class="cam-badge" aria-hidden="true">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+          </span>
+          <span class="photo-tip">Photo coming soon</span>
+        </div>
+        <div class="role-badge">PhD Student</div>
+        <div class="member-name">Carle Dugan</div>
+        <p class="member-research">Susceptibility of reproductive transcriptional regulatory networks to endocrine disrupting chemicals (EDCs), using zebrafish as a model.</p>
+        <a href="mailto:carle.dugan@tamu.edu" class="member-email">carle.dugan@tamu.edu</a>
+      </div>
+
+      <!-- Kylee Patterson -->
+      <div class="member-card fade-up">
+        <div class="avatar-sm" style="background:linear-gradient(135deg,#a8dadc,#2e86ab)" aria-label="Photo coming soon for Kylee Patterson">
+          KP
+          <span class="cam-badge" aria-hidden="true">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+          </span>
+          <span class="photo-tip">Photo coming soon</span>
+        </div>
+        <div class="role-badge">PhD Student</div>
+        <div class="member-name">Kylee Patterson</div>
+        <p class="member-research">Metabolomics and microrespirometry to assess single and mixture PFAS effects on metabolic physiology of larval and juvenile sheepshead minnows.</p>
+        <a href="mailto:kylee.patterson@tamu.edu" class="member-email">kylee.patterson@tamu.edu</a>
+      </div>
+
+      <!-- Joslyn Kent -->
+      <div class="member-card fade-up">
+        <div class="avatar-sm" style="background:linear-gradient(135deg,#112d4e,#a8dadc)" aria-label="Photo coming soon for Joslyn Kent">
+          JK
+          <span class="cam-badge" aria-hidden="true">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+          </span>
+          <span class="photo-tip">Photo coming soon</span>
+        </div>
+        <div class="role-badge">PhD Student</div>
+        <div class="member-name">Joslyn Kent</div>
+        <p class="member-research">PFAS body-burdens in fish and marine mammals; metabolomics to assess physiological correspondence with high contaminant loads.</p>
+        <a href="mailto:joslynkent@tamu.edu" class="member-email">joslynkent@tamu.edu</a>
+      </div>
+
+      <!-- Benjamin Lamp — full width -->
+      <div class="member-card member-card-wide fade-up">
+        <div class="member-wide-inner">
+          <div>
+            <div class="avatar-sm" style="background:linear-gradient(135deg,#2e86ab,#c9a227);margin-bottom:0.75rem;" aria-label="Photo coming soon for Benjamin Lamp">
+              BL
+              <span class="cam-badge" aria-hidden="true">
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
+              </span>
+              <span class="photo-tip">Photo coming soon</span>
+            </div>
+          </div>
+          <div style="flex:1;min-width:200px;">
+            <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+              <div class="role-badge" style="margin-bottom:0;">PhD Student</div>
+              <div class="award-badge">🏆 2025 Hagler Award</div>
+            </div>
+            <div class="member-name">Benjamin Lamp</div>
+            <p class="member-research">
+              Multi-omic integration (transcriptomics + metabolomics) into context-specific
+              zebrafish metabolic models to study PAH toxicity mechanisms under environmental
+              light conditions.
+            </p>
+            <a href="mailto:blamp23@tamu.edu" class="member-email">blamp23@tamu.edu</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /members-grid -->
+
+    <!-- Alumni -->
+    <div class="fade-up">
+      <h3 class="alumni-heading">Lab Alumni</h3>
+      <ul class="alumni-list">
+        <li class="alumni-item">
+          <span class="alumni-year">PhD 2024</span>
+          <div class="alumni-name">Dr. Yu Umeki</div>
+          <div class="alumni-desc">Metabolic detoxification of legacy and emerging pollutants in the American alligator.</div>
+        </li>
+        <li class="alumni-item">
+          <span class="alumni-year">PhD 2023</span>
+          <div class="alumni-name">Dr. Rayna Nolen</div>
+          <div class="alumni-desc">PFAS pollution in Galveston Bay; biomarkers of adverse effects in fish.</div>
+        </li>
+        <li class="alumni-item">
+          <span class="alumni-year">PhD 2021</span>
+          <div class="alumni-name">Dr. Patricia Faulkner</div>
+          <div class="alumni-desc">American alligator endocrinology under environmental stress.</div>
+        </li>
+        <li class="alumni-item">
+          <span class="alumni-year">MS 2020</span>
+          <div class="alumni-name">Joshua Leleux</div>
+          <div class="alumni-desc">PAH/PCB body-burdens and fatty acid biomarkers in Sabine Lake fish.</div>
+        </li>
+        <li class="alumni-item">
+          <span class="alumni-year">Postdoc 2017–2019</span>
+          <div class="alumni-name">Dr. Beatrice Hernout</div>
+          <div class="alumni-desc">Metabolic network modeling and Gulf of Mexico aquatic toxicology.</div>
+          <div class="alumni-now">Now: Senior Scientist, Exponent.</div>
+        </li>
+        <li class="alumni-item">
+          <span class="alumni-year">RA 2019–2020</span>
+          <div class="alumni-name">M. Chase Lawson</div>
+          <div class="alumni-desc">PAH and PCB body-burdens in fish and marine mammals, northwestern Gulf of Mexico.</div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 5 — PUBLICATIONS
+============================================= -->
+<section id="publications" aria-labelledby="pubs-h2">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">// our work</p>
+      <h2 class="section-title" id="pubs-h2">Publications</h2>
+      <p class="pub-intro">Selected peer-reviewed publications from the Hala Lab.</p>
+    </div>
+
+    <!-- PLACEHOLDER: replace with real publications -->
+    <ul class="pub-list fade-up" aria-label="Selected publications">
+      <li class="pub-item">
+        <span class="pub-year">2024</span>
+        <div>
+          <div class="pub-title">Metabolic network responses to PFAS exposure in larval sheepshead minnow</div>
+          <div class="pub-journal">Aquatic Toxicology</div>
+          <div class="pub-authors">Hala D, Patterson K, et al.</div>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2023</span>
+        <div>
+          <div class="pub-title">PFAS body-burden dynamics and endocrine disruption in Galveston Bay fish populations</div>
+          <div class="pub-journal">Environmental Science &amp; Technology</div>
+          <div class="pub-authors">Hala D, Nolen R, et al.</div>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2022</span>
+        <div>
+          <div class="pub-title">Flux balance analysis reveals PAH-driven rewiring of central carbon metabolism in zebrafish larvae</div>
+          <div class="pub-journal">Environmental Health Perspectives</div>
+          <div class="pub-authors">Hala D, Hernout B, et al.</div>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2021</span>
+        <div>
+          <div class="pub-title">Endocrine biomarkers of environmental stress in the American alligator: a multi-year field assessment</div>
+          <div class="pub-journal">Comparative Biochemistry and Physiology</div>
+          <div class="pub-authors">Hala D, Faulkner P, et al.</div>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2020</span>
+        <div>
+          <div class="pub-title">PAH and PCB contamination in Sabine Lake: fatty acid profiles as biomarkers of chronic exposure in resident fish</div>
+          <div class="pub-journal">Marine Pollution Bulletin</div>
+          <div class="pub-authors">Hala D, Leleux J, et al.</div>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2019</span>
+        <div>
+          <div class="pub-title">Context-specific genome-scale metabolic modeling for aquatic toxicology: a GIMME-based framework</div>
+          <div class="pub-journal">PLOS Computational Biology</div>
+          <div class="pub-authors">Hala D, Hernout B, et al.</div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="pub-actions fade-up">
+      <a href="#" class="btn-outline-teal">View Full Publication List</a>
+      <a href="#" class="btn-outline-teal">Google Scholar Profile</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 6 — FACILITIES
+============================================= -->
+<section id="facilities" aria-labelledby="fac-h2">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">// where we work</p>
+      <h2 class="section-title" id="fac-h2">Facilities</h2>
+    </div>
+
+    <div class="facilities-grid fade-up">
+
+      <div class="facility-card">
+        <!-- Wet Lab icon: beaker/flask -->
+        <svg class="facility-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M15 6h10M18 6v10L10 28a6 6 0 0 0 5.3 9h9.4A6 6 0 0 0 30 28L22 16V6" stroke="#2e86ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 26c2 1 4.5-1 7 1s5 1 7-1" stroke="#a8dadc" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="facility-title">Wet Laboratory</h3>
+        <p class="facility-desc">Exposure systems and aquatic animal housing for toxicological experiments across marine and freshwater species. Equipped for acute and chronic bioassay studies with precise environmental controls.</p>
+      </div>
+
+      <div class="facility-card">
+        <!-- Analytical chemistry icon: chromatogram trace -->
+        <svg class="facility-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="5" y="7" width="30" height="22" rx="2" stroke="#2e86ab" stroke-width="2"/>
+          <path d="M8 22l5-8 4 5 4-10 5 8 5-10" stroke="#2e86ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="5" y1="33" x2="35" y2="33" stroke="#a8dadc" stroke-width="2" stroke-linecap="round"/>
+          <line x1="13" y1="33" x2="13" y2="36" stroke="#a8dadc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="22" y1="33" x2="22" y2="36" stroke="#a8dadc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="31" y1="33" x2="31" y2="36" stroke="#a8dadc" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="facility-title">Analytical Chemistry</h3>
+        <p class="facility-desc">Instrumentation for quantifying legacy and emerging contaminants in biological and environmental matrices. Capabilities include PFAS and PAH analysis across tissue, water, and sediment samples.</p>
+      </div>
+
+      <div class="facility-card">
+        <!-- Computational icon: network nodes -->
+        <svg class="facility-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="5" stroke="#2e86ab" stroke-width="2"/>
+          <circle cx="7"  cy="10" r="3" stroke="#2e86ab" stroke-width="2"/>
+          <circle cx="33" cy="10" r="3" stroke="#2e86ab" stroke-width="2"/>
+          <circle cx="7"  cy="30" r="3" stroke="#2e86ab" stroke-width="2"/>
+          <circle cx="33" cy="30" r="3" stroke="#2e86ab" stroke-width="2"/>
+          <circle cx="20" cy="4"  r="2.5" stroke="#a8dadc" stroke-width="1.8"/>
+          <circle cx="20" cy="36" r="2.5" stroke="#a8dadc" stroke-width="1.8"/>
+          <line x1="10" y1="12" x2="16" y2="18" stroke="#2e86ab" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30" y1="12" x2="24" y2="18" stroke="#2e86ab" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10" y1="28" x2="16" y2="22" stroke="#2e86ab" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30" y1="28" x2="24" y2="22" stroke="#2e86ab" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="20" y1="6.5" x2="20" y2="15" stroke="#a8dadc" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="20" y1="25" x2="20" y2="33.5" stroke="#a8dadc" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <h3 class="facility-title">Computational Resources</h3>
+        <p class="facility-desc">High-performance computing access for constraint-based metabolic modeling, multi-omic data integration, and flux balance analysis using MATLAB, R, and the COBRA Toolbox.</p>
+      </div>
+
+    </div>
+
+    <div class="location-callout fade-up">
+      📍 Located at Texas A&amp;M University at Galveston &nbsp;·&nbsp; 200 Seawolf Pkwy, Galveston, TX 77554 &nbsp;·&nbsp; Detailed facility information forthcoming.
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 7 — JOIN US
+============================================= -->
+<section id="join" aria-labelledby="join-h2">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">// opportunities</p>
+    </div>
+    <div class="join-grid">
+      <div class="fade-up">
+        <h2 class="join-heading" id="join-h2">
+          We're Building the Next Generation of Environmental Scientists
+        </h2>
+        <p class="join-body">
+          The Systems Toxicology Laboratory welcomes motivated graduate students
+          and postdoctoral researchers interested in marine toxicology, vertebrate
+          physiology, and computational systems biology. We value curiosity, rigor,
+          and a genuine interest in protecting Gulf Coast ecosystems.
+        </p>
+        <p class="join-body" style="margin-top:-0.5rem;">
+          Prospective PhD students should have a background in biology,
+          biochemistry, environmental science, or a related field. Experience
+          with MATLAB, R, or bioinformatics is a plus but not required — we train.
+        </p>
+        <ul class="join-benefits">
+          <li class="join-benefit"><span class="benefit-check">✓</span>Mentorship across wet lab and computational approaches</li>
+          <li class="join-benefit"><span class="benefit-check">✓</span>Access to Gulf of Mexico field sites and collaborator networks</li>
+          <li class="join-benefit"><span class="benefit-check">✓</span>Competitive funding through TAMUG fellowships and research grants</li>
+        </ul>
+      </div>
+
+      <div class="fade-up">
+        <div class="join-cta-card">
+          <h3 class="join-cta-heading">Interested in Joining?</h3>
+          <p class="join-cta-body">
+            Send Dr. Hala an email with your CV, a brief description of your
+            research interests, and why you're drawn to our work.
+          </p>
+          <a href="mailto:halad@tamug.edu" class="btn-teal-full">Email Dr. Hala</a>
+          <p class="join-cta-meta">Texas A&amp;M University at Galveston · Department of Marine Biology</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SECTION 8 — CONTACT / FOOTER
+============================================= -->
+<footer id="contact">
+  <div class="container">
+    <div class="contact-grid fade-up">
+
+      <div class="contact-item">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+            <path d="M20 4C13.925 4 9 8.925 9 15c0 9.5 11 21 11 21s11-11.5 11-21c0-6.075-4.925-11-11-11z" stroke="#2e86ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="15" r="3.5" stroke="#2e86ab" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="contact-lbl">Location</div>
+        <div class="contact-val">200 Seawolf Pkwy<br>Galveston, TX 77554</div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+            <rect x="5" y="9" width="30" height="22" rx="2" stroke="#2e86ab" stroke-width="2"/>
+            <path d="M5 13l15 10L35 13" stroke="#2e86ab" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="contact-lbl">Email</div>
+        <div class="contact-val"><a href="mailto:halad@tamug.edu">halad@tamug.edu</a></div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+            <path d="M10 8h5l2 5.5-3.5 2.5a17 17 0 0 0 10.5 10.5l2.5-3.5L32 25v5a2 2 0 0 1-2 2C16 32 8 20 8 10a2 2 0 0 1 2-2z" stroke="#2e86ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="contact-lbl">Phone</div>
+        <div class="contact-val"><a href="tel:+14097404535">409-740-4535</a></div>
+      </div>
+
+    </div>
+
+    <div class="footer-bar">
+      <div class="footer-copy">© 2025 Systems Toxicology Laboratory · Texas A&amp;M University at Galveston</div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#">TAMUG</a>
+        <a href="#">Marine Biology Dept</a>
+        <a href="#">Google Scholar</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- =============================================
+     JAVASCRIPT
+============================================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
