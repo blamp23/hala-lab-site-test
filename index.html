@@ -29,7 +29,7 @@
       <li><a href="#people">People</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#facilities">Facilities</a></li>
-      <li><a href="#join">Join Us</a></li>
+      <li><a href="#join">Contact</a></li>
       <li><a href="#sponsors">Funding</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -45,7 +45,7 @@
   <a href="#people" class="mob-link">People</a>
   <a href="#publications" class="mob-link">Publications</a>
   <a href="#facilities" class="mob-link">Facilities</a>
-  <a href="#join" class="mob-link">Join Us</a>
+  <a href="#join" class="mob-link">Contact</a>
   <a href="#sponsors" class="mob-link">Funding</a>
   <a href="#contact" class="mob-link">Contact</a>
 </div>
@@ -306,6 +306,54 @@
       <h2 class="section-title" id="people-h2">The Lab</h2>
     </div>
 
+    <!-- LAB PHOTO GALLERY
+         To add photos: replace each .gallery-slide's inner content with
+         <img src="../Images/your-photo.jpg" alt="Description" />
+         Add new slides by duplicating a .gallery-slide div and a .gallery-dot span. -->
+    <div class="lab-gallery fade-up" id="labGallery" aria-label="Lab photo gallery">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide" style="background:linear-gradient(135deg,#0a2342 0%,#112d4e 60%,#2e86ab 100%);">
+          <div class="gallery-placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="white" stroke-width="2"/><circle cx="24" cy="25" r="7" stroke="white" stroke-width="2"/><circle cx="35" cy="17" r="2.5" fill="white"/><path d="M4 18h40" stroke="white" stroke-width="1" opacity="0.3"/></svg>
+            <p>Lab &amp; Field Work · Photos Coming Soon</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background:linear-gradient(135deg,#112d4e 0%,#0a2342 50%,#500000 100%);">
+          <div class="gallery-placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="white" stroke-width="2"/><circle cx="24" cy="25" r="7" stroke="white" stroke-width="2"/><circle cx="35" cy="17" r="2.5" fill="white"/></svg>
+            <p>Wet Lab · Photos Coming Soon</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background:linear-gradient(135deg,#2e86ab 0%,#0a2342 100%);">
+          <div class="gallery-placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="white" stroke-width="2"/><circle cx="24" cy="25" r="7" stroke="white" stroke-width="2"/><circle cx="35" cy="17" r="2.5" fill="white"/></svg>
+            <p>Galveston Bay Fieldwork · Photos Coming Soon</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background:linear-gradient(135deg,#071829 0%,#2e86ab 100%);">
+          <div class="gallery-placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="white" stroke-width="2"/><circle cx="24" cy="25" r="7" stroke="white" stroke-width="2"/><circle cx="35" cy="17" r="2.5" fill="white"/></svg>
+            <p>Conferences &amp; Presentations · Photos Coming Soon</p>
+          </div>
+        </div>
+        <div class="gallery-slide" style="background:linear-gradient(135deg,#500000 0%,#0a2342 100%);">
+          <div class="gallery-placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="white" stroke-width="2"/><circle cx="24" cy="25" r="7" stroke="white" stroke-width="2"/><circle cx="35" cy="17" r="2.5" fill="white"/></svg>
+            <p>TAMUG Campus · Photos Coming Soon</p>
+          </div>
+        </div>
+      </div>
+      <button class="gallery-arrow prev" id="galleryPrev" aria-label="Previous photo">&#8249;</button>
+      <button class="gallery-arrow next" id="galleryNext" aria-label="Next photo">&#8250;</button>
+      <div class="gallery-dots" id="galleryDots" aria-hidden="true">
+        <span class="gallery-dot active" data-gallery-idx="0"></span>
+        <span class="gallery-dot" data-gallery-idx="1"></span>
+        <span class="gallery-dot" data-gallery-idx="2"></span>
+        <span class="gallery-dot" data-gallery-idx="3"></span>
+        <span class="gallery-dot" data-gallery-idx="4"></span>
+      </div>
+    </div>
+
     <!-- PI -->
     <div class="pi-card fade-up">
       <div class="avatar-lg" aria-label="Avatar placeholder for Dr. David Hala">DH</div>
@@ -317,12 +365,16 @@
         <div class="pi-links">
           <a href="#" class="btn-small">TAMUG Faculty Page</a>
           <a href="#" class="btn-small">Google Scholar</a>
+          <a href="bios/david-hala.html" class="btn-small">Full Profile</a>
         </div>
         <div class="pi-bio">Biography forthcoming.</div>
       </div>
     </div>
 
-    <!-- Current Members -->
+    <!-- Current Members
+         EDITING: each card has: role badge, joined date, name, one-sentence research,
+         keyword pills, email, and a link to their bio page in bios/.
+         Update "Joined Fall 20XX" for each person. -->
     <h3 class="members-heading fade-up">Current Members</h3>
     <div class="members-grid">
 
@@ -330,116 +382,181 @@
       <div class="member-card fade-up">
         <div class="avatar-sm" style="background:linear-gradient(135deg,#2e86ab,#0a2342)" aria-label="Photo coming soon for Olivia Thibault">
           OT
-          <span class="cam-badge" aria-hidden="true">
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-          </span>
+          <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
           <span class="photo-tip">Photo coming soon</span>
         </div>
-        <div class="role-badge">PhD Candidate</div>
+        <div class="member-meta-row">
+          <span class="role-badge">PhD Candidate</span>
+          <span class="member-joined">Joined Fall 20XX</span><!-- UPDATE -->
+        </div>
         <div class="member-name">Olivia Thibault</div>
-        <p class="member-research">Reproductive endocrinology and metabolic physiology of southern flounder. Co-mentored with Dr. Lene Petersen.</p>
-        <a href="mailto:livi73@tamu.edu" class="member-email">livi73@tamu.edu</a>
+        <p class="member-research">Studying reproductive endocrinology and metabolic physiology of southern flounder, co-mentored with Dr. Lene Petersen.</p>
+        <div class="member-keywords">
+          <span class="mkw">Endocrinology</span>
+          <span class="mkw">Flounder</span>
+          <span class="mkw">Metabolic Physiology</span>
+          <span class="mkw">Reproduction</span>
+        </div>
+        <div class="member-footer">
+          <a href="mailto:livi73@tamu.edu" class="member-email">livi73@tamu.edu</a>
+          <a href="bios/olivia-thibault.html" class="btn-bio">Full Profile →</a>
+        </div>
       </div>
 
       <!-- Asif Mortuza -->
       <div class="member-card fade-up">
         <div class="avatar-sm" style="background:linear-gradient(135deg,#500000,#112d4e)" aria-label="Photo coming soon for Asif Mortuza">
           AM
-          <span class="cam-badge" aria-hidden="true">
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-          </span>
+          <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
           <span class="photo-tip">Photo coming soon</span>
         </div>
-        <div class="role-badge">PhD Candidate</div>
+        <div class="member-meta-row">
+          <span class="role-badge">PhD Candidate</span>
+          <span class="member-joined">Joined Fall 20XX</span><!-- UPDATE -->
+        </div>
         <div class="member-name">Asif Mortuza</div>
-        <p class="member-research">Microplastics and pollutants (PAHs/PCBs) in surface waters and biota of Matagorda Bay; toxicological effects on early life-stage fish.</p>
-        <a href="mailto:morta02@tamu.edu" class="member-email">morta02@tamu.edu</a>
+        <p class="member-research">Quantifying microplastics and organic pollutants in Matagorda Bay surface waters and biota, and assessing their toxicological effects on early life-stage fish.</p>
+        <div class="member-keywords">
+          <span class="mkw">Microplastics</span>
+          <span class="mkw">PAHs / PCBs</span>
+          <span class="mkw">Field Sampling</span>
+          <span class="mkw">Matagorda Bay</span>
+        </div>
+        <div class="member-footer">
+          <a href="mailto:morta02@tamu.edu" class="member-email">morta02@tamu.edu</a>
+          <a href="bios/asif-mortuza.html" class="btn-bio">Full Profile →</a>
+        </div>
       </div>
 
       <!-- Daniel Kemp -->
       <div class="member-card fade-up">
         <div class="avatar-sm" style="background:linear-gradient(135deg,#2e86ab,#500000)" aria-label="Photo coming soon for Daniel Kemp">
           DK
-          <span class="cam-badge" aria-hidden="true">
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-          </span>
+          <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
           <span class="photo-tip">Photo coming soon</span>
         </div>
-        <div class="role-badge">PhD Student</div>
+        <div class="member-meta-row">
+          <span class="role-badge">PhD Student</span>
+          <span class="member-joined">Joined Fall 20XX</span><!-- UPDATE -->
+        </div>
         <div class="member-name">Daniel Kemp</div>
-        <p class="member-research">Developmental bioenergetics and physiology of larval southern flounder. Co-mentored with Dr. Lene Petersen.</p>
-        <a href="mailto:danielkemp@tamu.edu" class="member-email">danielkemp@tamu.edu</a>
+        <p class="member-research">Investigating developmental bioenergetics and physiology of larval southern flounder, co-mentored with Dr. Lene Petersen.</p>
+        <div class="member-keywords">
+          <span class="mkw">Bioenergetics</span>
+          <span class="mkw">Larval Fish</span>
+          <span class="mkw">Development</span>
+          <span class="mkw">Flounder</span>
+        </div>
+        <div class="member-footer">
+          <a href="mailto:danielkemp@tamu.edu" class="member-email">danielkemp@tamu.edu</a>
+          <a href="bios/daniel-kemp.html" class="btn-bio">Full Profile →</a>
+        </div>
       </div>
 
       <!-- Carle Dugan -->
       <div class="member-card fade-up">
         <div class="avatar-sm" style="background:linear-gradient(135deg,#0a2342,#2e86ab)" aria-label="Photo coming soon for Carle Dugan">
           CD
-          <span class="cam-badge" aria-hidden="true">
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-          </span>
+          <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
           <span class="photo-tip">Photo coming soon</span>
         </div>
-        <div class="role-badge">PhD Student</div>
+        <div class="member-meta-row">
+          <span class="role-badge">PhD Student</span>
+          <span class="member-joined">Joined Fall 20XX</span><!-- UPDATE -->
+        </div>
         <div class="member-name">Carle Dugan</div>
-        <p class="member-research">Susceptibility of reproductive transcriptional regulatory networks to endocrine disrupting chemicals (EDCs), using zebrafish as a model.</p>
-        <a href="mailto:carle.dugan@tamu.edu" class="member-email">carle.dugan@tamu.edu</a>
+        <p class="member-research">Mapping the susceptibility of reproductive transcriptional networks to endocrine disrupting chemicals using zebrafish as a model organism.</p>
+        <div class="member-keywords">
+          <span class="mkw">EDCs</span>
+          <span class="mkw">Zebrafish</span>
+          <span class="mkw">Transcriptomics</span>
+          <span class="mkw">Endocrine Disruption</span>
+        </div>
+        <div class="member-footer">
+          <a href="mailto:carle.dugan@tamu.edu" class="member-email">carle.dugan@tamu.edu</a>
+          <a href="bios/carle-dugan.html" class="btn-bio">Full Profile →</a>
+        </div>
       </div>
 
       <!-- Kylee Patterson -->
       <div class="member-card fade-up">
         <div class="avatar-sm" style="background:linear-gradient(135deg,#a8dadc,#2e86ab)" aria-label="Photo coming soon for Kylee Patterson">
           KP
-          <span class="cam-badge" aria-hidden="true">
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-          </span>
+          <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
           <span class="photo-tip">Photo coming soon</span>
         </div>
-        <div class="role-badge">PhD Student</div>
+        <div class="member-meta-row">
+          <span class="role-badge">PhD Student</span>
+          <span class="member-joined">Joined Fall 20XX</span><!-- UPDATE -->
+        </div>
         <div class="member-name">Kylee Patterson</div>
-        <p class="member-research">Metabolomics and microrespirometry to assess single and mixture PFAS effects on metabolic physiology of larval and juvenile sheepshead minnows.</p>
-        <a href="mailto:kylee.patterson@tamu.edu" class="member-email">kylee.patterson@tamu.edu</a>
+        <p class="member-research">Using metabolomics and microrespirometry to characterize how PFAS mixtures affect metabolic physiology of larval and juvenile sheepshead minnows.</p>
+        <div class="member-keywords">
+          <span class="mkw">PFAS</span>
+          <span class="mkw">Metabolomics</span>
+          <span class="mkw">Microrespirometry</span>
+          <span class="mkw">Sheepshead Minnow</span>
+        </div>
+        <div class="member-footer">
+          <a href="mailto:kylee.patterson@tamu.edu" class="member-email">kylee.patterson@tamu.edu</a>
+          <a href="bios/kylee-patterson.html" class="btn-bio">Full Profile →</a>
+        </div>
       </div>
 
       <!-- Joslyn Kent -->
       <div class="member-card fade-up">
         <div class="avatar-sm" style="background:linear-gradient(135deg,#112d4e,#a8dadc)" aria-label="Photo coming soon for Joslyn Kent">
           JK
-          <span class="cam-badge" aria-hidden="true">
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-          </span>
+          <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
           <span class="photo-tip">Photo coming soon</span>
         </div>
-        <div class="role-badge">PhD Student</div>
+        <div class="member-meta-row">
+          <span class="role-badge">PhD Student</span>
+          <span class="member-joined">Joined Fall 20XX</span><!-- UPDATE -->
+        </div>
         <div class="member-name">Joslyn Kent</div>
-        <p class="member-research">PFAS body-burdens in fish and marine mammals; metabolomics to assess physiological correspondence with high contaminant loads.</p>
-        <a href="mailto:joslynkent@tamu.edu" class="member-email">joslynkent@tamu.edu</a>
+        <p class="member-research">Assessing PFAS body-burdens in fish and marine mammals and applying metabolomics to understand physiological effects of high contaminant loads.</p>
+        <div class="member-keywords">
+          <span class="mkw">PFAS</span>
+          <span class="mkw">Marine Mammals</span>
+          <span class="mkw">Body Burden</span>
+          <span class="mkw">Metabolomics</span>
+        </div>
+        <div class="member-footer">
+          <a href="mailto:joslynkent@tamu.edu" class="member-email">joslynkent@tamu.edu</a>
+          <a href="bios/joslyn-kent.html" class="btn-bio">Full Profile →</a>
+        </div>
       </div>
 
-      <!-- Benjamin Lamp — full width -->
+      <!-- Benjamin Lamp — full width, Hagler Award -->
       <div class="member-card member-card-wide fade-up">
         <div class="member-wide-inner">
           <div>
             <div class="avatar-sm" style="background:linear-gradient(135deg,#2e86ab,#c9a227);margin-bottom:0.75rem;" aria-label="Photo coming soon for Benjamin Lamp">
               BL
-              <span class="cam-badge" aria-hidden="true">
-                <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg>
-              </span>
+              <span class="cam-badge" aria-hidden="true"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><rect x="1" y="3" width="10" height="7" rx="1" stroke="#6b7280" stroke-width="1.2"/><path d="M4 3V2a2 2 0 0 1 4 0v1" stroke="#6b7280" stroke-width="1.2"/><circle cx="6" cy="6.5" r="1.5" stroke="#6b7280" stroke-width="1.2"/></svg></span>
               <span class="photo-tip">Photo coming soon</span>
             </div>
           </div>
           <div style="flex:1;min-width:200px;">
-            <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.5rem;">
-              <div class="role-badge" style="margin-bottom:0;">PhD Student</div>
+            <div class="member-meta-row">
+              <span class="role-badge" style="margin-bottom:0;">PhD Student</span>
               <div class="award-badge">🏆 2025 Hagler Award</div>
+              <span class="member-joined">Joined Fall 2025</span>
             </div>
             <div class="member-name">Benjamin Lamp</div>
-            <p class="member-research">
-              Multi-omic integration (transcriptomics + metabolomics) into context-specific
-              zebrafish metabolic models to study PAH toxicity mechanisms under environmental
-              light conditions.
-            </p>
-            <a href="mailto:blamp23@tamu.edu" class="member-email">blamp23@tamu.edu</a>
+            <p class="member-research">Integrating transcriptomics and metabolomics into context-specific zebrafish genome-scale metabolic models to mechanistically study PAH toxicity under varying environmental light conditions.</p>
+            <div class="member-keywords">
+              <span class="mkw">Multi-Omics</span>
+              <span class="mkw">Metabolic Modeling</span>
+              <span class="mkw">PAHs</span>
+              <span class="mkw">Zebrafish GEM</span>
+              <span class="mkw">Light Toxicology</span>
+            </div>
+            <div class="member-footer">
+              <a href="mailto:blamp23@tamu.edu" class="member-email">blamp23@tamu.edu</a>
+              <a href="bios/benjamin-lamp.html" class="btn-bio">Full Profile →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -623,44 +740,44 @@
 </section>
 
 <!-- =============================================
-     SECTION 7 — JOIN US
+     SECTION 7 — CONTACT US
 ============================================= -->
 <section id="join" aria-labelledby="join-h2">
   <div class="container">
     <div class="fade-up">
-      <p class="section-label">// opportunities</p>
+      <p class="section-label">// get in touch</p>
     </div>
     <div class="join-grid">
       <div class="fade-up">
         <h2 class="join-heading" id="join-h2">
-          We're Building the Next Generation of Environmental Scientists
+          We'd Love to Hear From You
         </h2>
         <p class="join-body">
-          The Systems Toxicology Laboratory welcomes motivated graduate students
-          and postdoctoral researchers interested in marine toxicology, vertebrate
-          physiology, and computational systems biology. We value curiosity, rigor,
-          and a genuine interest in protecting Gulf Coast ecosystems.
+          The Systems Toxicology Laboratory actively collaborates with researchers,
+          agencies, and institutions working at the intersection of environmental
+          contamination, Gulf Coast ecology, and computational biology.
         </p>
         <p class="join-body" style="margin-top:-0.5rem;">
-          Prospective PhD students should have a background in biology,
-          biochemistry, environmental science, or a related field. Experience
-          with MATLAB, R, or bioinformatics is a plus but not required — we train.
+          Whether you're a scientist with shared research interests, a funding agency
+          exploring partnerships, or a student curious about our work — Dr. Hala
+          welcomes thoughtful inquiry.
         </p>
         <ul class="join-benefits">
-          <li class="join-benefit"><span class="benefit-check">✓</span>Mentorship across wet lab and computational approaches</li>
-          <li class="join-benefit"><span class="benefit-check">✓</span>Access to Gulf of Mexico field sites and collaborator networks</li>
-          <li class="join-benefit"><span class="benefit-check">✓</span>Competitive funding through TAMUG fellowships and research grants</li>
+          <li class="join-benefit"><span class="benefit-check">→</span>Research collaborations &amp; inter-institutional partnerships</li>
+          <li class="join-benefit"><span class="benefit-check">→</span>Gulf of Mexico field &amp; analytical studies</li>
+          <li class="join-benefit"><span class="benefit-check">→</span>Media, outreach &amp; science communication requests</li>
         </ul>
       </div>
 
       <div class="fade-up">
         <div class="join-cta-card">
-          <h3 class="join-cta-heading">Interested in Joining?</h3>
+          <h3 class="join-cta-heading">Contact Dr. Hala</h3>
           <p class="join-cta-body">
-            Send Dr. Hala an email with your CV, a brief description of your
-            research interests, and why you're drawn to our work.
+            Dr. Hala is happy to discuss research questions, potential
+            collaborations, and general inquiries about the Systems
+            Toxicology Laboratory and its work.
           </p>
-          <a href="mailto:halad@tamug.edu" class="btn-teal-full">Email Dr. Hala</a>
+          <a href="mailto:halad@tamug.edu" class="btn-teal-full">Send an Email</a>
           <p class="join-cta-meta">Texas A&amp;M University at Galveston · Department of Marine Biology</p>
         </div>
       </div>
@@ -681,17 +798,21 @@
       <h2 class="section-title" id="sponsors-h2" style="color:var(--text-dark);">Funding &amp; Support</h2>
     </div>
     <div class="sponsors-carousel fade-up">
-      <div class="sponsors-stage" role="img" aria-label="Rotating funding agency logos">
-        <img src="Images/Sponsers/TGLO.png"                           alt="Texas General Land Office"          class="sponsor-slide active" />
-        <img src="Images/Sponsers/NSF.png"                            alt="National Science Foundation"        class="sponsor-slide" />
-        <img src="Images/Sponsers/USGS.png"                           alt="U.S. Geological Survey"             class="sponsor-slide" />
-        <img src="Images/Sponsers/TPWD.png"                           alt="Texas Parks and Wildlife Department" class="sponsor-slide" />
-        <img src="Images/Sponsers/MAF.png"                            alt="MAF"                                class="sponsor-slide" />
-        <img src="Images/Sponsers/EAG.png"                            alt="EAG"                                class="sponsor-slide" />
-        <img src="Images/Sponsers/USCRP.png"                          alt="USCRP"                              class="sponsor-slide" />
-        <img src="Images/Sponsers/oceanus.jpg"                        alt="Oceanus"                            class="sponsor-slide" />
-        <img src="Images/Sponsers/GBEP.png"                           alt="Galveston Bay Estuary Program"      class="sponsor-slide" />
-        <img src="Images/Sponsers/Matagorda-Bay-Mitigation-Logo-color.png" alt="Matagorda Bay Mitigation Trust" class="sponsor-slide" />
+      <div class="sponsor-nav">
+        <button class="sponsor-arrow" id="sponsorPrev" aria-label="Previous sponsor">&#8249;</button>
+        <div class="sponsors-stage" role="img" aria-label="Rotating funding agency logos">
+          <img src="Images/Sponsers/TGLO.png"                           alt="Texas General Land Office"          class="sponsor-slide active" />
+          <img src="Images/Sponsers/NSF.png"                            alt="National Science Foundation"        class="sponsor-slide" />
+          <img src="Images/Sponsers/USGS.png"                           alt="U.S. Geological Survey"             class="sponsor-slide" />
+          <img src="Images/Sponsers/TPWD.png"                           alt="Texas Parks and Wildlife Department" class="sponsor-slide" />
+          <img src="Images/Sponsers/MAF.png"                            alt="MAF"                                class="sponsor-slide" />
+          <img src="Images/Sponsers/EAG.png"                            alt="EAG"                                class="sponsor-slide" />
+          <img src="Images/Sponsers/USCRP.png"                          alt="USCRP"                              class="sponsor-slide" />
+          <img src="Images/Sponsers/oceanus.jpg"                        alt="Oceanus"                            class="sponsor-slide" />
+          <img src="Images/Sponsers/GBEP.png"                           alt="Galveston Bay Estuary Program"      class="sponsor-slide" />
+          <img src="Images/Sponsers/Matagorda-Bay-Mitigation-Logo-color.png" alt="Matagorda Bay Mitigation Trust" class="sponsor-slide" />
+        </div>
+        <button class="sponsor-arrow" id="sponsorNext" aria-label="Next sponsor">&#8250;</button>
       </div>
       <div class="sponsor-dots" aria-hidden="true">
         <span class="sponsor-dot active"></span>

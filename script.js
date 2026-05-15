@@ -118,20 +118,85 @@
 
   /* ---- SPONSOR CAROUSEL
      Cycles through .sponsor-slide images every 3 seconds.
-     To add a new sponsor: add an <img class="sponsor-slide"> in index.html
-     and a matching <span class="sponsor-dot"> in .sponsor-dots. ---- */
-  const slides = Array.from(document.querySelectorAll('.sponsor-slide'));
-  const dots   = Array.from(document.querySelectorAll('.sponsor-dot'));
-  let current  = 0;
+     Prev/Next buttons also allow manual navigation. ---- */
+  const slides      = Array.from(document.querySelectorAll('.sponsor-slide'));
+  const dots        = Array.from(document.querySelectorAll('.sponsor-dot'));
+  let sponsorIdx    = 0;
+  let sponsorTimer;
+
+  function goToSponsor(idx) {
+    slides[sponsorIdx].classList.remove('active');
+    dots[sponsorIdx].classList.remove('active');
+    sponsorIdx = (idx + slides.length) % slides.length;
+    slides[sponsorIdx].classList.add('active');
+    dots[sponsorIdx].classList.add('active');
+  }
+
+  function startSponsorTimer() {
+    clearInterval(sponsorTimer);
+    sponsorTimer = setInterval(() => goToSponsor(sponsorIdx + 1), 3000);
+  }
 
   if (slides.length > 1) {
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-    }, 3000);
+    startSponsorTimer();
+    document.getElementById('sponsorPrev')?.addEventListener('click', () => {
+      goToSponsor(sponsorIdx - 1);
+      startSponsorTimer(); // reset timer on manual click
+    });
+    document.getElementById('sponsorNext')?.addEventListener('click', () => {
+      goToSponsor(sponsorIdx + 1);
+      startSponsorTimer();
+    });
+  }
+
+  /* ---- LAB PHOTO GALLERY
+     Auto-advances every 5 seconds. Click prev/next arrows or dots to navigate.
+     To add photos: see index.html gallery-slide divs. ---- */
+  const galleryTrack = document.getElementById('galleryTrack');
+  const galleryDots  = Array.from(document.querySelectorAll('[data-gallery-idx]'));
+  const gallerySlideCount = galleryDots.length;
+  let galleryIdx   = 0;
+  let galleryTimer;
+
+  function goToGallery(idx) {
+    galleryIdx = (idx + gallerySlideCount) % gallerySlideCount;
+    galleryTrack.style.transform = `translateX(-${galleryIdx * 100}%)`;
+    galleryDots.forEach((d, i) => d.classList.toggle('active', i === galleryIdx));
+  }
+
+  function startGalleryTimer() {
+    clearInterval(galleryTimer);
+    galleryTimer = setInterval(() => goToGallery(galleryIdx + 1), 5000);
+  }
+
+  if (galleryTrack && gallerySlideCount > 1) {
+    startGalleryTimer();
+
+    document.getElementById('galleryPrev')?.addEventListener('click', () => {
+      goToGallery(galleryIdx - 1);
+      startGalleryTimer();
+    });
+    document.getElementById('galleryNext')?.addEventListener('click', () => {
+      goToGallery(galleryIdx + 1);
+      startGalleryTimer();
+    });
+    galleryDots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goToGallery(parseInt(dot.dataset.galleryIdx, 10));
+        startGalleryTimer();
+      });
+    });
+
+    /* Touch/swipe support for gallery */
+    let touchStartX = 0;
+    galleryTrack.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    galleryTrack.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) {
+        goToGallery(galleryIdx + (dx < 0 ? 1 : -1));
+        startGalleryTimer();
+      }
+    }, { passive: true });
   }
 
 })();
