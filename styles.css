@@ -682,10 +682,13 @@ img { max-width: 100%; display: block; }
 }
 .member-research {
   font-size: 14px;
+  font-style: italic;
   color: var(--text-muted);
   line-height: 1.65;
   margin-bottom: 0.75rem;
 }
+.member-research::before { content: '\201C'; }
+.member-research::after  { content: '\201D'; }
 .member-email {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
@@ -724,18 +727,17 @@ img { max-width: 100%; display: block; }
 .member-keywords {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.5rem;
   margin: 0.65rem 0 0.85rem;
 }
 .mkw {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
-  color: var(--teal);
-  background: rgba(46,134,171,0.1);
-  border: 1px solid rgba(46,134,171,0.25);
-  padding: 2px 9px;
-  border-radius: 100px;
-  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  padding: 0;
+  letter-spacing: 0.02em;
 }
 
 /* Member card footer: email left, bio button right */
