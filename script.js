@@ -66,39 +66,6 @@
   }, { threshold: 0.12 });
   fadeEls.forEach(el => fadeObs.observe(el));
 
-  /* ---- STAT COUNTERS
-     Any element with data-target="N" (and optionally data-suffix="+")
-     will animate from 0 → N when scrolled into view.
-     To add a new counter: <span class="stat-number" data-target="5">0</span> ---- */
-  const counters  = document.querySelectorAll('[data-target]');
-  const triggered = new WeakSet();
-
-  function runCounter(el) {
-    const target   = parseInt(el.dataset.target, 10);
-    const suffix   = el.dataset.suffix || '';
-    const duration = 1500; // ms
-    const t0 = performance.now();
-
-    function tick(now) {
-      const p     = Math.min((now - t0) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 3); // ease-out cubic
-      el.textContent = Math.floor(eased * target) + (p >= 1 ? suffix : '');
-      if (p < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-
-  const counterObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !triggered.has(entry.target)) {
-        triggered.add(entry.target);
-        runCounter(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(c => counterObs.observe(c));
-
   /* ---- SMOOTH SCROLL
      Intercepts clicks on any anchor link (href="#section-id") and
      scrolls smoothly, accounting for the fixed nav height. ---- */
