@@ -116,6 +116,25 @@
     });
   }
 
+  /* ---- PUBLICATION SPOTLIGHT CAROUSELS
+     Each research card has a .card-pub-carousel that rotates every 4s ---- */
+  document.querySelectorAll('[data-pub-carousel]').forEach(carousel => {
+    const slides = Array.from(carousel.querySelectorAll('.card-pub-slide'));
+    const dots   = Array.from(carousel.querySelectorAll('.card-pub-dot'));
+    let idx = 0;
+
+    function goTo(n) {
+      slides[idx].classList.remove('active');
+      dots[idx].classList.remove('active');
+      idx = (n + slides.length) % slides.length;
+      slides[idx].classList.add('active');
+      dots[idx].classList.add('active');
+    }
+
+    dots.forEach(dot => dot.addEventListener('click', () => goTo(parseInt(dot.dataset.idx, 10))));
+    setInterval(() => goTo(idx + 1), 4000);
+  });
+
   /* ---- LAB PHOTO GALLERY
      Auto-advances every 5 seconds. Click prev/next arrows or dots to navigate.
      To add photos: see index.html gallery-slide divs. ---- */
