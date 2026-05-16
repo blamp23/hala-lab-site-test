@@ -349,7 +349,7 @@ img { max-width: 100%; display: block; }
 
 .hero-logo-col {
   flex-shrink: 0;
-  width: 240px;
+  width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
