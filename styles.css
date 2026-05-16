@@ -343,22 +343,21 @@ img { max-width: 100%; display: block; }
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   gap: 4rem;
 }
 
 .hero-logo-col {
   flex-shrink: 0;
+  width: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero-logo-img {
-  height: 100%;
-  width: auto;
-  max-width: 260px;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
