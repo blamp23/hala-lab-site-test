@@ -566,7 +566,7 @@ img { max-width: 100%; display: block; }
    PEOPLE
 ============================================= */
 #people {
-  background: #eef7f8;
+  background: var(--white);
   padding: 100px 0;
   position: relative;
 }
@@ -691,10 +691,51 @@ img { max-width: 100%; display: block; }
   background: var(--white);
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.07);
-  padding: 1.75rem 1.75rem 1.75rem 2rem;
+  display: flex;
+  flex-direction: row;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   position: relative;
   overflow: hidden;
+}
+
+.member-photo-col {
+  width: 170px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.member-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.member-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.member-info-col {
+  flex: 1;
+  padding: 1.4rem 1.4rem 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .member-card { flex-direction: column; }
+  .member-photo-col { width: 100%; height: 200px; }
+  .member-photo-placeholder { min-height: 200px; }
 }
 /* Teal left accent bar — appears on hover */
 .member-card::before {
@@ -1091,7 +1132,7 @@ img { max-width: 100%; display: block; }
    FACILITIES
 ============================================= */
 #facilities {
-  background: var(--white);
+  background: #eef7f8;
   padding: 100px 0;
   position: relative;
 }
@@ -1213,7 +1254,7 @@ img { max-width: 100%; display: block; }
    SPONSORS / FUNDING
 ============================================= */
 #sponsors {
-  background: var(--sand);
+  background: var(--white);
   padding: 80px 0;
   position: relative;
 }
@@ -1228,8 +1269,8 @@ img { max-width: 100%; display: block; }
 /* Fixed square stage — images sit on top of each other */
 .sponsors-stage {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
 }
 
 /* Each logo: fills the square, no cropping */
@@ -1463,6 +1504,24 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 .bio-email-line a:hover { color: var(--navy); }
+
+.bio-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin: 1.25rem 0 2rem;
+}
+.bio-gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+@media (max-width: 600px) {
+  .bio-gallery { grid-template-columns: 1fr; }
+  .bio-gallery-img { height: 220px; }
+}
 
 /* =============================================
    PUBLICATIONS PAGE (publications.html)
